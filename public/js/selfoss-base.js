@@ -487,3 +487,15 @@ var selfoss = {
 };
 
 selfoss.init();
+
+$(function(){
+  $('li span.tag')
+  .each(
+    function(){
+      if($(this).text()=='Everything'){
+        $(this).click();
+      }
+    }
+  ) 
+});
+
